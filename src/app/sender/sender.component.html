@@ -1,0 +1,8 @@
+<p>sender </p>
+
+<div class="input-group mb-3" style="width: 600px ;">
+    <input #sender type="text" class="form-control" placeholder="Send a message" aria-label="Send a message" aria-describedby="basic-addon2">
+    <div class="input-group-append">
+      <button class="btn btn-outline-secondary" type="button" (click)="sendMessage(sender.value)">Send</button>
+    </div>
+</div>

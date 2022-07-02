@@ -1,0 +1,12 @@
+<p>receiver </p>
+<div class="input-group mb-3" style="width: 600px ;">
+    <input #receiver type="text" class="form-control" placeholder="Send a message" aria-label="Send a message"
+        aria-describedby="basic-addon2">
+    <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button" (click)="sendMessage(receiver.value)">Send</button>
+    </div>
+</div>
+
+<div class="container text-center my-3">
+    <div *ngFor="let message of messages" class="alert alert-sm alert-info">{{message.text}}</div>
+</div>
